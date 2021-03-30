@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DazzleJewelry", "DazzleJewelry\DazzleJewelry.csproj", "{F8005788-CDB0-4182-90F4-A11C3DD32D76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DazzleJewelry", "DazzleJewelry\DazzleJewelry.csproj", "{2D7299FD-6F6B-4513-B902-D81E6D02F69E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F8005788-CDB0-4182-90F4-A11C3DD32D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8005788-CDB0-4182-90F4-A11C3DD32D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8005788-CDB0-4182-90F4-A11C3DD32D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8005788-CDB0-4182-90F4-A11C3DD32D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D7299FD-6F6B-4513-B902-D81E6D02F69E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D7299FD-6F6B-4513-B902-D81E6D02F69E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D7299FD-6F6B-4513-B902-D81E6D02F69E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D7299FD-6F6B-4513-B902-D81E6D02F69E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C710FD12-8C15-41FE-A2A7-5D6F5E2EAB62}
+		SolutionGuid = {2F3473A0-B536-4AE2-BA25-C702569FCBD6}
 	EndGlobalSection
 EndGlobal

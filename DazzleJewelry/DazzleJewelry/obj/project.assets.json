@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ezgih\\source\\repos\\DazzleJewelry\\DazzleJewelry\\DazzleJewelry.csproj",
+      "projectUniqueName": "C:\\Users\\ezgih\\Desktop\\Ezgi Hareket\\DazzleJewelry\\DazzleJewelry\\DazzleJewelry.csproj",
       "projectName": "DazzleJewelry",
-      "projectPath": "C:\\Users\\ezgih\\source\\repos\\DazzleJewelry\\DazzleJewelry\\DazzleJewelry.csproj",
+      "projectPath": "C:\\Users\\ezgih\\Desktop\\Ezgi Hareket\\DazzleJewelry\\DazzleJewelry\\DazzleJewelry.csproj",
       "packagesPath": "C:\\Users\\ezgih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ezgih\\source\\repos\\DazzleJewelry\\DazzleJewelry\\obj\\",
+      "outputPath": "C:\\Users\\ezgih\\Desktop\\Ezgi Hareket\\DazzleJewelry\\DazzleJewelry\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ezgih\\AppData\\Roaming\\NuGet\\NuGet.Config",

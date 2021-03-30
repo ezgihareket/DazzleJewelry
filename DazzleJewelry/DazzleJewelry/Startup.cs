@@ -14,15 +14,15 @@ namespace DazzleJewelry
 {
     public class Startup
     {
-       
-       
+
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews(); 
-            services.AddScoped<ICategoryRepository, CategoryRepository>(); 
-            services.AddScoped<IJewelryRepository, JewelryRepository>(); 
+            services.AddControllersWithViews();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IJewelryRepository, JewelryRepository>();
             services.AddRazorPages();
         }
 
@@ -33,7 +33,7 @@ namespace DazzleJewelry
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseHttpsRedirection(); 
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseHttpsRedirection();
@@ -45,7 +45,7 @@ namespace DazzleJewelry
 
             app.UseEndpoints(endpoints =>
             {
-                // 1
+               
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}"

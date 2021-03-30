@@ -23,7 +23,7 @@ namespace DazzleJewelry.Models
                 ImgThumUrl = "https://www.dazzlecave.com/Uploads/UrunResimleri/thumb/minimal-simsek-kupe---k113-b029.jpg",
                 IsInStock = true,
                 IsOnSale = false
-            }
+            },
 
             new Jewelry
             {
@@ -40,7 +40,7 @@ namespace DazzleJewelry.Models
                 ImgThumUrl = "https://www.dazzlecave.com/Uploads/UrunResimleri/buyuk/ayarlanabilir-flat-earth-yuzuk---y20-a285.jpg",
                 IsInStock = true,
                 IsOnSale = true
-            }
+            },
 
             new Jewelry
             {

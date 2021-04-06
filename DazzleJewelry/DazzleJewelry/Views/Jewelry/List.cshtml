@@ -1,0 +1,50 @@
+﻿@model JewelryListViewModel
+
+    <h1>@Model.CurrentCategory</h1>
+    @foreach (var jewelry in Model.Jewelries)
+    {
+<div class="ProductListContent">
+    <div class="ProductList sort_4">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+
+            <div class="thumbnail">
+
+                <img src="@jewelry.ImgThumUrl" alt="image for jewelry shop" />
+
+                <div class="caption">
+                    <h2><a asp-controller="Jewelry" asp-action="Details" asp-route-id="@jewelry.JewelryId">@jewelry.Name</a></h2>
+                    <div class="productItem">
+                        <div class="productDetail">
+                            <div class="productName detailUrl">
+                                <p>@jewelry.Description</p>
+                            </div>
+                        </div>
+                        <div class="productPrice">
+                            <div class="discountPrice">
+                                <span><b>@jewelry.Price.ToString("c")</b></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="mycartIcon tip" title="Sepete Ekle">
+                    <a class="btnAddToCart"
+                       asp-controller="ShoppingCart"
+                       asp-action="AddToShoppingCart"
+                       asp-route-jewelryId="@jewelry.JewelryId">
+
+                        <span class="urunListeSpanSepeteEkle">
+                            Sepete Ekle
+                        </span>
+                    </a>
+
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+</div>
+        }

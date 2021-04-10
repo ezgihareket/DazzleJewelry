@@ -30,5 +30,15 @@ namespace DazzleJewelry.Controllers
             return View(jewelryListViewModel);
             
         }
+
+        public IActionResult Details(int id)
+        {
+            var jewelry = _jewelryRepository.GetJewelryById(id);
+            if (jewelry == null)
+            {
+                return NotFound();
+            }
+            return View(jewelry);
+        }
     }
 }

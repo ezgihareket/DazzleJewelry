@@ -7,11 +7,12 @@ namespace DazzleJewelry.Models
 {
     public class CategoryRepository : ICategoryRepository
     {
-        public IEnumerable<Category> GetAllCategories => new List<Category>
+        private readonly AppDbContext _appDbContext;
+
+        public CategoryRepository(AppDbContext appDbContext)
         {
-            new Category { CategoryId = 1, CategoryName = "Küpe" },
-            new Category { CategoryId = 2, CategoryName = "Yüzük" },
-            new Category { CategoryId = 3, CategoryName = "Kolye" }
-        };
+            _appDbContext = appDbContext;
+        }
+        public IEnumerable<Category> GetAllCategories => _appDbContext.Categories;
     }
 }

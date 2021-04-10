@@ -1,0 +1,69 @@
+﻿@model Jewelry
+
+
+<div id="contentProductDetail" class="contentProductDetail">
+    <div class="ProductDetail">
+        <div class="categoryTitle">
+            <div class="proCategoryTitle categoryTitleText">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ProductDetailMain">
+    <div class="ProductDetailMainRow">
+        <div class="leftImage">
+            <div class="Images imageZoomPreview">
+                <img src="@Model.ImgUrl" alt="@Model.Name" />
+            </div>
+        </div>
+        <div class="RightDetail">
+            <div class="ProductName">
+                <h1>
+                    <span>
+                        <a href="#">@Model.Name</a>
+                    </span>
+                </h1>
+            </div>
+            <div class="PriceList">
+                <div class="Formline">
+                </div>
+                <div class="urunDetayFiyatContainer">
+                    <div class="Formline">
+
+                        <span class="right_line indirimliFiyat">
+                            <span class="spanFiyat">@Model.Price</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="buybutton" id="divSatinAl">
+                <div class="BasketBtn">
+                    <div class="buyfast">
+                        <a class="btnAddToCart"
+                           asp-controller="ShoppingCart"
+                           asp-action="AddToShoppingCart"
+                           asp-route-jewelryId="@Model.JewelryId">
+
+                            <span class="urunListeSpanSepeteEkle" style="width: 33.33%;background-color: #ddbb94;padding: 15px; color: white;">
+                                Sepete Ekle
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="urunOzellik">
+            <div class="urunDetayPanel">
+                <div class="urunTabAlt">
+                    <h2>Ürün Özellikleri</h2>
+                    @Model.Description
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

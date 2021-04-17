@@ -16,6 +16,7 @@ namespace DazzleJewelry.Models
 
         public DbSet<Jewelry> Jewelries { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
 
 
@@ -146,6 +147,8 @@ namespace DazzleJewelry.Models
                 IsInStock = true,
                 IsOnSale = true
             });
+
+           
         }
 
     }

@@ -1,0 +1,28 @@
+﻿<div id="carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="~/images/kolyeler.jpg" style="width: 100%; height: 100%;" />
+
+        </div>
+        <div class="item">
+            <img src="~/images/yuzukler.jpg" style="width: 100%; height: 100%;" />
+
+        </div>
+        <div class="item">
+            <img src="~/images/tasarim-kupeler.jpg" style="width: 100%; height: 100%;" />
+
+        </div>
+    </div>
+</div>
+
+<script>
+        $("carousel").carousel(
+            {
+                interval: 2000
+            });
+</script>

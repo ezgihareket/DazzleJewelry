@@ -76,3 +76,7 @@ C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\bin\Debug\netcor
 C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Jewelry\Details.cshtml.g.cs
+C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_jewelryCard.cshtml.g.cs
+C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Carousel.cshtml.g.cs
+C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\ShoppingCart\Index.cshtml.g.cs

@@ -1,0 +1,40 @@
+﻿@model ShoppingCartViewModel
+
+<h2>Alışveriş Sepeti: </h2>
+
+<table class="table table-bordered table-striped">
+
+    <thead>
+        <tr>
+            <th> </th>
+            <th>Adet</th>
+            <th>Takı</th>
+            <th class="text-right">Fiyat</th>
+            <th class="text-right">Ara Toplam</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+        {
+
+        <tr>
+           
+            <td>
+                <img class="sepetImg urunSepetResim" src="@item.Jewelry.ImgThumUrl" onerror="this.onerror=null;this.src='';">
+            </td>
+            <td class="text-center">@item.Amount</td>
+            <td class="text-left">@item.Jewelry.Name</td>
+            <td class="text-right">@item.Jewelry.Price.ToString("c")</td>
+            <td class="text-right">
+                @((item.Amount * item.Jewelry.Price).ToString("c"))
+            </td>
+        </tr>
+
+        }
+    </tbody>
+    <tfoot>
+    <td colspan="4" class="text-right"> <b>Toplam</b></td>
+    <td class="text-right" style="color: red;">@Model.ShoppingCartTotal.ToString("c")</td>
+    </tfoot>
+</table>

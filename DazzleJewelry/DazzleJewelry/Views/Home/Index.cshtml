@@ -1,0 +1,15 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel" />
+<div class="container">
+
+</div>
+
+<h2>Ürünler</h2>
+
+<div class="row">
+    @foreach (var jewelry in Model.JewelryOnSale)
+    {
+        <partial name="_jewelryCard" model="jewelry" />
+    }
+</div>

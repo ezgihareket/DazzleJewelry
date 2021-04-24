@@ -20,15 +20,26 @@ namespace DazzleJewelry.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        public IActionResult List()
+        public ViewResult List(string category)
         {
+            IEnumerable<Jewelry> jeweleries;
+            string currentCategory;
+            if (string.IsNullOrEmpty(category))
+            {
+                jeweleries = _jewelryRepository.GetAllJewelry.OrderBy(c => c.JewelryId);
+                currentCategory = "Tüm Takılar";
 
-            // return View(_jewelryRepository.GetAllJewelry);
-            var jewelryListViewModel = new JewelryListViewModel();
-            jewelryListViewModel.Jewelries = _jewelryRepository.GetAllJewelry;
-            jewelryListViewModel.CurrentCategory = "En Çok Satılanlar";
-            return View(jewelryListViewModel);
-            
+            }
+            else
+            {
+                jeweleries = _jewelryRepository.GetAllJewelry.Where(c => c.Category.CategoryName == category);
+                currentCategory = _categoryRepository.GetAllCategories.FirstOrDefault(c => c.CategoryName == category)?.CategoryName;
+            }
+            return View(new JewelryListViewModel
+            {
+                Jewelries = jeweleries,
+                CurrentCategory = currentCategory,
+            });
         }
 
         public IActionResult Details(int id)

@@ -80,3 +80,6 @@ C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcor
 C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Carousel.cshtml.g.cs
 C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\ShoppingCart\Index.cshtml.g.cs
+C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
+C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
+C:\Users\ezgih\Desktop\Ezgi Hareket\DazzleJewelry\DazzleJewelry\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs

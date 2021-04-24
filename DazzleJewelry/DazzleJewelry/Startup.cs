@@ -33,6 +33,7 @@ namespace DazzleJewelry
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IJewelryRepository, JewelryRepository>();
             services.AddScoped<ShoppingCart>(sc => ShoppingCart.GetCart(sc));
+            services.AddScoped<IOrderRepository, OrderRepository>();
 
             services.AddHttpContextAccessor();
             services.AddSession();

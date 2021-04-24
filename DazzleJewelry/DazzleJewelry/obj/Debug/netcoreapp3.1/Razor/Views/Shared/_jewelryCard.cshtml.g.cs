@@ -27,7 +27,7 @@ using DazzleJewelry.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d14cea49ea95cff407b769de5ba95fd2224422fb", @"/Views/Shared/_jewelryCard.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"65ace925b95eac03c1c7c0fe977bee8cafdc7ed2", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"09420a88a877374328f76b44e84178b160699c00", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__jewelryCard : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Jewelry>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Jewelry", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

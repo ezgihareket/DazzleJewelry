@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Order>
+@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Ad</th>
+            <th scope="col">Soyad</th>
+            <th scope="col">Adres</th>
+            <th scope="col">Toplam Tutar</th>
+            <th scope="col">İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.OrderId</th>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Address</td>
+                <td>@item.OrderTotal</td>
+                <td>
+                    <a asp-route-id="@item.OrderId" asp-action="DeleteOrder" class="button basketCompletebtn" style="border-radius: 3px; background:#616c70 !important;">İptal Et</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

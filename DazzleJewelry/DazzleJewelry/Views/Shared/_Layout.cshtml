@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
     <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <script src="~/lib/jquery/jquery.js"></script>
@@ -11,43 +12,43 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div>
-        <div class="container">
-            <div class="headerContent">
-                <div class="home-header">
-                    <a href="/home/index">
-                        <img class="img-responsive" src="~/images/logo.png" width="255" height="50" />
-                    </a>
-                </div>
-                <div class="navigation">
-                    <div>
-                        <div id="divUcTopMenu">
-                            <ul class="HeaderMenu2" id="HeaderMenu2">
-                                <li class="ulVar">
-                                    <a asp-controller="Home" asp-action="Index" target="_self">ANASAYFA</a>
-                                </li>
-                                @await Component.InvokeAsync("CategoryMenu")
-                                <li class="ulVar">
-                                    <a asp-controller="Contact" asp-action="Index" target="_self">İLETİŞİM</a>
-                                </li>
-                                @await Component.InvokeAsync("ShoppingCartSummary")
+    <div class="container">
+        <div class="headerContent">
+            <div class="home-header">
+                <a href="/home/index">
+                    <img class="img-responsive" src="~/images/logo.png" width="255" height="50" />
+                </a>
+            </div>
+            <div class="navigation">
+                <div>
+                    <div id="divUcTopMenu">
+                        <ul class="HeaderMenu2" id="HeaderMenu2">
+                            <li class="ulVar">
+                                <a asp-controller="Home" asp-action="Index" target="_self">ANASAYFA</a>
+                            </li>
+                            @await Component.InvokeAsync("CategoryMenu")
+                            <li class="ulVar">
+                                <a asp-controller="Contact" asp-action="Index" target="_self">İLETİŞİM</a>
+                            </li>
+                            @await Component.InvokeAsync("ShoppingCartSummary")
 
+                            <partial name="_LoginPartial" />
 
-
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
-
                 </div>
 
-                <div class="col-md-12">
-                    @RenderBody()
-
-                </div>
-                
             </div>
 
+            <div class="col-md-12">
+                @RenderBody()
+
+            </div>
+            @RenderSection("Scripts", required: false)
         </div>
+
     </div>
+
+
 </body>
 </html>

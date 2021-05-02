@@ -8,5 +8,9 @@ namespace DazzleJewelry.Models
     public interface ICategoryRepository
     {
         IEnumerable<Category> GetAllCategories { get; }
+
+        void CreateCategory(Category category);
+
+        void DeleteCategory(int id);
     }
 }

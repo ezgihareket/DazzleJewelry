@@ -1,0 +1,55 @@
+﻿@model Jewelry
+@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="col-md-9">
+        <form method="POST" action="/Admin/JewelrySave" enctype="multipart/form-data">
+            <br>
+            <input type="hidden" asp-for="JewelryId">
+            <div class="mb-3">
+                <label class="form-label">Ürün Adı</label>
+                <input type="text" class="form-control" asp-for="Name">
+            </div>
+            <br>
+            <div class="mb-3">
+                <label class="form-label">Açıklama</label>
+                <textarea class="form-control" asp-for="Description"></textarea>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label class="form-label">Kategori</label>
+                @Html.DropDownList("CategoryId", null, "Bir kategori seçiniz!", new { @class = "form-control" })
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="form-label">Görsel</label>
+                <input type="file" class="form-control" name="ImageUrl">
+            </div>
+            <div class="mb-3 mt-1">
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" asp-for="IsOnSale" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Satış Durumu
+                    </label>
+                    <input class="form-check-input" type="checkbox" asp-for="IsInStock" id="stockCheck">
+                    <label class="form-check-label" for="stockCheck">
+                        Stokta Bulunuyor Mu?
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fiyat</label>
+                <input type="text" class="form-control" asp-for="Price">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Kaydet</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-3 text-center">
+        <label class="form-label">Ürün Resmi</label>
+        <img src="@Model.ImgUrl">
+    </div>
+</div>

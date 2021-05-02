@@ -19,9 +19,9 @@
         {
 
         <tr>
-           
+            <td class="text-center"><a style="color:red" asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-jewelryId="@item.Jewelry.JewelryId" alt="">Miktarı Azalt</a></td>
             <td>
-                <img class="sepetImg urunSepetResim" src="@item.Jewelry.ImgThumUrl" onerror="this.onerror=null;this.src='';">
+                <img class="sepetImg urunSepetResim" src="@item.Jewelry.ImgThumUrl" onerror="this.onerror=null;this.src='';" height="70" width="70">
             </td>
             <td class="text-center">@item.Amount</td>
             <td class="text-left">@item.Jewelry.Name</td>
@@ -40,6 +40,6 @@
 </table>
 
 <div class="text-center">
-    
+    <a class="button basketCompletebtn" style="border-radius: 3px; background:#616c70 !important;" asp-controller="ShoppingCart" asp-action="ClearCart">Sepeti Temizle</a>
     <a class="button basketCompletebtn" style="border-radius: 3px;" asp-controller="Order" asp-action="Checkout">Kontrol Et</a>
 </div>

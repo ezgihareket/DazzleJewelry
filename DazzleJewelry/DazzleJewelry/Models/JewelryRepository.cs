@@ -34,5 +34,18 @@ namespace DazzleJewelry.Models
         {
             return _appDbContext.Jewelries.FirstOrDefault(c => c.JewelryId == jewelryId);
         }
+
+        public void SaveJewelry(Jewelry jewelry)
+        {
+            if (jewelry.JewelryId == 0)
+            {
+                _appDbContext.Add(jewelry);
+            }
+            else
+            {
+                _appDbContext.Update(jewelry);
+            }
+            _appDbContext.SaveChanges();
+        }
     }
 }

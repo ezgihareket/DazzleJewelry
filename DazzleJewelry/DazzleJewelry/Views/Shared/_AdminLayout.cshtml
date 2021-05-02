@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <link href="~/content/site.css" rel="stylesheet" />
+    <title>Admin Panel</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="headerContent">
+            <div class="home-header">
+                <a href="/home/index">
+                    <img class="img-responsive" src="~/images/logo.png" width="255" height="50" />
+                </a>
+            </div>
+            <div class="navigation">
+                <div>
+                    <div id="divUcTopMenu">
+                        <ul class="HeaderMenu2" id="HeaderMenu2">
+                            <li class="ulVar">
+                                <a asp-controller="Admin" asp-action="Index">Anasayfa</a>
+                            </li>
+                            <li class="ulVar">
+                                <a asp-controller="Admin" asp-action="Category">Kategoriler</a>
+                            </li>
+                            <li class="ulVar">
+                                <a asp-controller="Admin" asp-action="Jewelrys">Takılar</a>
+                            </li>
+                            <li class="ulVar">
+                                <a asp-controller="Admin" asp-action="Orders">Siparişler</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                @RenderBody()
+
+            </div>
+            @RenderSection("Scripts", required: false)
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

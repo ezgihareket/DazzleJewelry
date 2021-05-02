@@ -8,5 +8,8 @@ namespace DazzleJewelry.Models
     public interface IOrderRepository
     {
         void CreateOrder(Order order);
+        IEnumerable<Order> getAll();
+
+        void DeleteOrder(int orderId);
     }
 }

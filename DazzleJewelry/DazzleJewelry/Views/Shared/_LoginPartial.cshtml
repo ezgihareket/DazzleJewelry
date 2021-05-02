@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+        <ul class="HeaderMenu2" id="HeaderMenu2">
+            <li class="ulVar">
+                <button type="submit" style=" background-color: transparent; font-size:13px;">Çıkış Yap</button>
+            </li>
+            <li class="ulVar">
+                <a target="_self" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Merhaba @UserManager.GetUserName(User)!</a>
+            </li>
+
+        </ul>
+    </form>
+}
+else
+{
+
+    <li class="ulVar">
+        <a target="_self" asp-area="Identity" asp-page="/Account/Register">Kayıt Ol</a>
+    </li>
+    <li class="ulVar">
+        <a target="_self" asp-area="Identity" asp-page="/Account/Login">Giriş Yap</a>
+    </li>
+
+}

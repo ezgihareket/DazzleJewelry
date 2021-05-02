@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Jewelry>
+@{
+    Layout = "/Views/Shared/_AdminLayout.cshtml";
+}
+
+<a class="button basketCompletebtn" style="border-radius: 3px;" href="/Admin/JewelryPage">Yeni Takı Ekle</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Görsel</th>
+            <th scope="col">Takı</th>
+            <th scope="col">Fiyat</th>
+            <th scope="col">Kategori</th>
+            <th scope="col">Düzenle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.JewelryId</th>
+                <td><img src="@item.ImgUrl" height="70" width="70"></td>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Category.CategoryName</td>
+                <td>
+                    <a asp-action="JewelryPage" asp-route-id="@item.JewelryId" style="color:blue">Düzenle</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

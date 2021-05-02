@@ -10,5 +10,6 @@ namespace DazzleJewelry.Models
         IEnumerable<Jewelry> GetAllJewelry { get; }
         IEnumerable<Jewelry> GetJewelryOnSale { get; }
         Jewelry GetJewelryById(int jewelryId);
+        void SaveJewelry(Jewelry jewelry);
     }
 }

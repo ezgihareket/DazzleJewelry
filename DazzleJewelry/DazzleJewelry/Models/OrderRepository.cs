@@ -38,5 +38,20 @@ namespace DazzleJewelry.Models
             }
             _appDbContext.SaveChanges();
         }
+
+        public void DeleteOrder(int orderId)
+        {
+            Order order = _appDbContext.Orders.FirstOrDefault(o => o.OrderId == orderId);
+            if (order != null)
+            {
+                _appDbContext.Orders.Remove(order);
+                _appDbContext.SaveChanges();
+            }
+        }
+
+        public IEnumerable<Order> getAll()
+        {
+            return _appDbContext.Orders.ToList();
+        }
     }
 }

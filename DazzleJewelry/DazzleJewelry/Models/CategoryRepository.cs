@@ -14,5 +14,21 @@ namespace DazzleJewelry.Models
             _appDbContext = appDbContext;
         }
         public IEnumerable<Category> GetAllCategories => _appDbContext.Categories;
+
+        public void CreateCategory(Category category)
+        {
+            _appDbContext.Categories.Add(category);
+            _appDbContext.SaveChanges();
+        }
+
+        public void DeleteCategory(int id)
+        {
+            Category temp = _appDbContext.Categories.FirstOrDefault(c => c.CategoryId == id);
+            if (temp != null)
+            {
+                _appDbContext.Categories.Remove(temp);
+                _appDbContext.SaveChanges();
+            }
+        }
     }
 }
